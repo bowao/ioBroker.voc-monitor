@@ -1,0 +1,104 @@
+{
+    "common": {
+        "name": "voc-monitor",
+        "version": "1.0.0",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "VOC-Monitor",
+        "titleLang": {
+            "en": "VOC-Monitor",
+            "de": "VOC-Monitor",
+            "ru": "ЛОС-монитор",
+            "pt": "VOC-Monitor",
+            "nl": "VOC-Monitor",
+            "fr": "Moniteur COV",
+            "it": "VOC-Monitor",
+            "es": "VOC-Monitor",
+            "pl": "Monitor LZO",
+            "zh-cn": "VOC监控器"
+        },
+        "desc": {
+            "en": "Reads VOC Sensors like REHAU Air-Quality-Sensor or similar with USB ID 03eb:2013",
+            "de": "Liest VOC-Sensoren wie REHAU Raumluftsensor oder ähnliche mit USB-ID 03eb:2013",
+            "ru": "Читает датчики VOC, такие как REHAU Air-Quality-Sensor или аналогичные с USB ID 03eb:2013",
+            "pt": "Lê sensores de VOC como REHAU Air-Quality-Sensor ou similar com USB ID 03eb:2013",
+            "nl": "Leest VOC-sensoren zoals REHAU Air-Quality-Sensor of vergelijkbaar met USB ID 03eb:2013",
+            "fr": "Lit les capteurs de VOC tels que REHAU Air-Quality-Sensor ou similaire avec USB ID 03eb:2013",
+            "it": "Legge sensori di VOC come REHAU Air-Quality-Sensor o simili con ID USB 03eb:2013",
+            "es": "Lee sensores de VOC como REHAU Air-Quality-Sensor o similar con USB ID 03eb:2013",
+            "pl": "Odczytuje czujniki VOC jak REHAU Air-Quality-Sensor lub podobny z USB ID 03eb:2013",
+            "zh-cn": "读取REHAU Air-Quality-Sensor等二氧化碳传感器或类似的USB ID 03eb:2013"
+        },
+        "authors": [
+            "bowao <cryolab@web.de>"
+        ],
+        "keywords": [
+            "Raumluftsensor",
+            "VOC",
+            "airquality",
+            "REHAU"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "voc-monitor.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/bowao/ioBroker.voc-monitor/master/admin/voc-monitor.png",
+        "readme": "https://github.com/bowao/ioBroker.voc-monitor/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "hardware",
+        "compact": true,
+        "materialize": true,
+        "materializeTab": true,
+        "dependencies": [
+            {
+                "js-controller": ">=1.4.2"
+            }
+        ]
+    },
+    "native": {
+        "usb": true,
+        "server": false,
+        "ip": "0.0.0.0",
+        "port": 44444
+    },
+    "objects": [],
+    "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "If connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+
+  ]
+
+}

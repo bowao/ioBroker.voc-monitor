@@ -1,0 +1,1 @@
+SUBSYSTEMS=="usb", KERNEL=="hidraw*", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="2013", GROUP="plugdev", SYMLINK+="voc-monitor"
