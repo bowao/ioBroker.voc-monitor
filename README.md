@@ -40,6 +40,8 @@ If another ioBroker adapter or application on the ioBroker-server or on the udp-
 
 ----
 
+## VOC-monitor adapter für ioBroker
+
 Der Adapter unterstützt den VOC-Sensor mit der USB Id 03eb:2013, dieser ist unter verschiedenen Produktnamen im Handel zu finden.
 Z.B. [USB indoor air monitor](https://ams.com/iam), [REHAU Raumluftsensor](https://www.rehau.com/de-de/raumluftsensor), [Velux Raumluftfühler](https://www.velux.de/produkte/lueftungsloesungen-belueftung/raumluftfuehler) oder Voltcraft CO-20.
 
@@ -72,16 +74,14 @@ Falls ein anderer ioBroker-Adapter oder eine andere Anwendung auf dem Rechner de
 
 **Einrichten des udp-Client, siehe [udp_client_README.md](https://github.com/bowao/ioBroker.voc-monitor/blob/master/rules_and_tools/udp_client_README.md)**
 
----
-
-
+## Changelog
 ### 1.0.0
 * (bowao) initial release
 
 ## License
 MIT License
 
-Copyright (c) 2019 bowao
+Copyright (c) 2020 bowao <cryolab@web.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
